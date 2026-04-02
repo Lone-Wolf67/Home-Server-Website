@@ -26,7 +26,7 @@ function setup() {
 	iceBall.color = 'black';
 	iceBall.vel.x = (randomInclNegative()*40);
 	iceBall.vel.y = (randomInclNegative()*40);
-	iceBall.bounciness = 1.5;
+	iceBall.bounciness = 1.1;
 	iceBall.friction = 0;
 	iceBall.drag = 0;
 	iceBall.text = "ICE";
