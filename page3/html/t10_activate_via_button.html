@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>T10</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- stylesheets *******************************************-->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!--*************************************************************
+  BODY
+**************************************************************-->
+
+<body>
+  <!-- Added Line for back button-->
+  <a href="../index.html" class="back-button">← Back</a>
+  
+  <h1>T10 - Activate by a button</h1>
+
+  <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+
+  <button onclick='start()'>Start Javascript</button><br><br><br>
+
+  <p id="paragraphText">Hello this is the example text</p>
+
+  <button onclick='changeText()'>Press this button to change the text above</button><br><br><br>
+
+  <form id="f_user_details" onsubmit="return false;">
+    <label for="i_name">Name:</label><br>
+    <input type="text" id="i_name" name="i_name" required><br><br>
+
+    <label for="i_age">Age:</label><br>
+    <input type="number" id="i_age" name="i_age" min="13" max="99" required><br><br>
+
+    <label for="i_money">Pocket Money:</label><br>
+    <input type="number" id="i_money" name="i_money" min="0" required><br><br>
+
+    <button onclick='getFormInput()' value="submit">Submit Form</button>
+  </form> 
+
+  <script src="../t10_activate_via_button.js"></script>
+
+</body>
+</html>
+<!--*************************************************************
+  END OF T10_ACTIVATE_VIA_BUTTON.HTML
+**************************************************************-->

@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Added lines for back button */
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: "Consolas";
+  font-size: 14px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}

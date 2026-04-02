@@ -1,0 +1,59 @@
+Icon: - available for free
+https://www.os2world.com/wiki/index.php?title=File:Dell_XPS_630i.jpg
+
+Home page servers - free version
+https://www.rawpixel.com/image/5914966
+
+Blue Background
+https://wallpapercave.com/w/wp11830941
+
+Normal background
+https://wallpapercave.com/w/wp11830871
+
+Everything else was taken by me
+
+
+
+
+Fonts:
+font-family: "Consolas";                (main)
+font-family: "Verdana";                 (Practice)
+font-family: "Raleway", sans-serif;     (another)
+
+
+<div class="item3">
+    <p> 
+        Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-134-generic x86_64) <br><br>
+        * Documentation:  https://help.ubuntu.com<br>
+        * Management:     https://landscape.canonical.com<br>
+        * Support:        https://ubuntu.com/pro<br><br>
+        Expanded Security Maintenance for Applications is not enabled.<br><br>
+        0 updates can be applied immediately.<br><br>
+        12 additional security updates can be applied with ESM Apps.<br>
+        Learn more about enabling ESM Apps service at https://ubuntu.com/esm<br><br>
+        New release '24.04.2 LTS' available.<br>
+        Run 'do-release-upgrade' to upgrade to it.<br>
+        <span class="green">root@https://https://legendary-eureka-wr5j475pq9wg295j5.github.dev/</span>:<span class="blue">~</span>$
+    </p>
+</div>
+
+OG colours:
+
+:root {
+  --selected: #6995CC;
+  --active: #8ADB2E; 
+  --background: #2D0922; 
+  --transBackground: #2d0922bd; 
+}
+
+Blue colours:
+
+:root {
+  --selected: #2D0922;
+  --active: #2D0922; 
+  --background: #6995CC; 
+  --transBackground: #6995CCbd; 
+  --backgroundImage: url('/images/blueBackground.png');
+}
+
+#6996cc66

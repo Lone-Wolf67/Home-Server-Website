@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 5vh;
+  background-color: #f0f0f0;
+
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+  width: 220px; /* Set a fixed width */
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/*form {
+  padding-top: 50px;
+}*/
+
+/* Added lines for back button */
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: "Consolas";
+  font-size: 14px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}

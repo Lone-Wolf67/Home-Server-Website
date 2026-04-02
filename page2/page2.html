@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=en> 
+
+<head>
+    <title>Wilkin's Home Server Website</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/page2/style.css">
+    <link rel="icon" type="image/x-icon" href="/page2/images/siteIcon.png">
+    <script src="/page2/script.js"></script>
+    <script> myFunction_get_theme(); </script>
+</head>
+<body>
+    <!-- Added Line for back button-->
+    <a href="../index.html" class="back-button">← Back</a>
+    
+    <div class="navBar">
+        <ul>
+            <li><a href="/page2/index.html">Home</a></li>
+            <li><a class="active" href="/page2/page2.html">Wilkin's Home Server</a></li>
+            <li><a href="/page2/page3.html">How can I make a home server?</a></li>
+        </ul>
+    </div>
+
+    <div class="grid-container">
+        <div class="item1">
+            <h1>My Home Server</h1>
+
+            <p class="noMargin">
+                My home server is a computer that I set up in mid October of 2024. It runs a few things, including: 
+            </p>
+
+            <ul>
+                <li>Plex (Movie streaming)</li>
+                <li>Crafty (Minecraft Servers)</li>
+                <li>BeamMP (A multiplayer server for BeamNG.drive)</li>
+                <li>Samba (File sharing)</li>
+            </ul>
+
+            <h1>
+                Specs (For Nerds)
+            </h1>
+
+            <p>
+                My home server is an old Dell XPS 630i from 2006. I picked it up in 2021 from the tip shop in Naenae for $20. <br>
+                It boasts an Intel Core 2 Quad Q8300 with 4 cores, clocked at 2.5ghz. <br>
+                It runs Ubuntu 22.04LTS. <br>
+                It has 120gb of SSD storage (boot and apps only). <br>
+                I have 4 3TB HDDs set up in a RAID 5 array (redundant array of inexpensive disks) so that 1 of the HDDs can fail and I wouldn't lose any data.
+            </p>
+        </div> 
+
+        <div class="item2">
+            <h1>My Server (ignore the dust)</h1>
+
+            <img src="/page2/images/homeServer.jpg" alt="A picture of my home server">
+
+            <h2>A picture of my home server</h2>
+        </div>   
+
+        <div class="item3">
+            <p>
+                Website by Wilkin Porter 2025. All rights reserved. <br> 
+                Sources: (Other images taken by me) <br>
+                Icon - <a href="https://www.os2world.com/wiki/index.php?title=File:Dell_XPS_630i.jpg">https://www.os2world.com/wiki/index.php?title=File:Dell_XPS_630i.jpg</a> <br>
+                Home Page - <a href="https://www.rawpixel.com/image/5914966">https://www.rawpixel.com/image/5914966</a><br>
+                Backgrounds - <a href="https://wallpapercave.com/ubuntu-2204-wallpapers">https://wallpapercave.com/ubuntu-2204-wallpapers</a> 
+            </p>
+
+            <div class="button">
+                <button type="button" onclick="myFunction_set_light()">Blue Mode</button>
+                <button type="button" onclick="myFunction_set_dark()">Purple Mode</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

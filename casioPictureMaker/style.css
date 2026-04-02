@@ -1,0 +1,151 @@
+body {
+    text-align: center;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 25px;
+    font-weight: 900;
+
+    /* Layered backgrounds: base gradient + radial patch */
+    background-image:
+    linear-gradient(120deg, #555, #c5c5c5),
+    radial-gradient(circle 350px at 50% 50%, rgba(197,197,197,0.3), transparent 70%);
+  
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: 200% 200%, 150% 150%;
+    background-position: 0% 50%, 50% 50%;
+
+    /* Smooth transition only for radial gradient (second background) */
+    transition: background-position 3s ease-in-out;
+}
+
+.picForm {
+    padding-top: 10px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+input {
+    font-family: "Consolas";
+    font-size: 23px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgrey;
+    width: 300px;
+}
+
+.confirm-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-sizing: border-box;
+}
+
+.confirm-button:hover {
+    background-color: #555;
+    transform: scale(1.02);
+}
+
+.link-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+	justify-content: center;               /* center the grid itself */
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;                        /* center horizontally in page */
+	width: fit-content;                    /* shrink to fit the 2 items */
+	max-width: 1800px;
+}
+
+.link-grid li {
+	margin: 0;
+	padding: 0;
+	width: 350px; /* optional: fix each item’s width to stay consistent */
+}
+
+@keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.drawArea {
+    justify-content: center;
+	align-items: center;
+	display: grid;
+}
+
+#grid {
+    justify-content: center;
+	align-items: center;
+	display: grid;
+	grid-gap: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+	width: fit-content;
+	border: 1px solid #222; /* optional outline */
+}
+
+.pixel {
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin: 0;
+	border: none;         /* make sure borders don’t add size */
+	outline: 1px solid #444; /* optional grid line for visibility */
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.pixel.on {
+	background: #000;
+}
+
+/* Added lines for back button */
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: "Consolas";
+  font-size: 14px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}

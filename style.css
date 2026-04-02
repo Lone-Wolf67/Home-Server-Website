@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Consolas";
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0;
+  padding: 40px 20px;
+
+  /* Layered backgrounds: base gradient + radial patch */
+  background-image:
+  linear-gradient(120deg, #555, #c5c5c5),
+  radial-gradient(circle 350px at 50% 50%, rgba(197,197,197,0.3), transparent 70%);
+  
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-size: 200% 200%, 150% 150%;
+  background-position: 0% 50%, 50% 50%;
+
+  /* Smooth transition only for radial gradient (second background) */
+  transition: background-position 3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.link-grid li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-sizing: border-box;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    transform: scale(1.02);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

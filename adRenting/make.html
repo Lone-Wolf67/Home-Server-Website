@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Make Your Ad - Wilkin's Ad Renting</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+
+<body onload="userNameHeader.textContent = 'Hi ' + sessionStorage.getItem('formUserName') + ', Please Make Your Ad'">
+    <!-- Added Line for back button-->
+    <a href="../index.html" class="back-button">← Back</a>
+    
+    <div class="navBar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="rent.html">Rent</a></li>
+        </ul>
+    </div>
+
+    <h1 id="userNameHeader">Make Your Ad</h1>
+
+    <form id="mAdDetails" onsubmit="return false;">
+        <label for="mText">Ad Text:</label><br>
+
+        <div class="widerInput">
+            <input type="text" id="mText" name="mText" maxlength="200" size="200" autocomplete="off" required><br><br>
+        </div>
+
+        <label for="mLink">Link Text (Please put either http:// or https:// before your link):</label><br>
+
+        <div class="widerInput">
+            <input type="url" id="mLink" name="mLink" size="200" autocomplete="off" pattern="https?://.+" required><br>
+        </div>
+
+        <p class="warning" id="alreadyCompletedWarning"></p>
+
+        <button onclick='getAdParameters()' value="submit">Confirm</button>
+    </form> 
+
+    <script src="rentAds.js"></script>
+
+</body>
+</html>

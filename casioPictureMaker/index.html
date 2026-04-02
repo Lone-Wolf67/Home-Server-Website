@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Casio Picture Maker</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" type="image/x-icon" href="/page4/icon.png"> -->
+</head>
+
+<body>
+    <!-- Added Line for back button-->
+    <a href="../index.html" class="back-button">← Back</a>
+
+    <h1>Casio Picture Maker</h1>
+
+    <div class="drawArea">
+        <div id="grid"></div>
+    </div>
+
+    <form id="parameters" class="picForm" onsubmit="return false;">
+        <label for="uPicNumber">Picture Number:</label><br>
+        <input class="picInput" type="number" id="uPicNumber" name="uPicNumber" min="1" max="9" value="1" required><br>
+        <!-- <button class="confirm-button" onclick='saveBinaryFile()' value="submit">Confirm</button> -->
+    </form>
+
+    <ul class="link-grid">
+        <a class="confirm-button" href="#" onclick="saveBinaryFile(); return false;">Save Image to .g1m File</a></li>
+        <a class="confirm-button" href="PICVIEWR.g1m">Download Casio Image Viewer Program</a></li>
+    </ul>
+    
+
+    <script src="create.js"></script>
+
+</body>
+</html>

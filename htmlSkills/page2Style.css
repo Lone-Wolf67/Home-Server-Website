@@ -1,0 +1,126 @@
+html, body {
+  background-color:royalblue;
+  text-align: center;
+  color: white;
+  font-family: "Verdana"; font-size: 16px;
+}
+
+.divtom {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+    
+  .faranch {
+    background-color: royalblue;
+    list-style-type: armenian;
+    margin: 10;
+    padding: 10;
+    display: inline-block;
+  }
+ 
+}
+
+img {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.tomContainer {
+  text-align: center;
+}
+
+ol li {
+  display: block;
+  float: none;
+}
+
+.imageBox {
+
+  border: 5px solid limegreen;
+  background-color: magenta;    
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  font-family: "Verdana"; font-size: 16px;
+
+}
+
+.navBar {
+
+  border: 6px solid limegreen;
+  border-radius: 6px;
+  margin-top: 20px;
+  position: sticky;
+  top: 0;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f70a4d;
+  }
+
+  li {
+    float: left;
+  }
+    
+  li a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #1500fc;
+  }
+
+  .active {
+    background-color: #0af7bc;
+  }
+
+}
+
+/* Added lines for back button */
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: "Consolas";
+  font-size: 14px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}

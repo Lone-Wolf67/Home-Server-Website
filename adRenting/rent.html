@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rent an Ad - Wilkin's Ad Renting</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+
+<body onload="realTimeListeners()">
+    <!-- Added Line for back button-->
+    <a href="../index.html" class="back-button">← Back</a>
+    
+    <div class="navBar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="rent.html">Rent</a></li>
+        </ul>
+    </div>
+
+    <h1>Rent an ad spot</h1>
+
+    <form id="fUserDetails" onsubmit="return false;">
+        <label for="uName">Name:</label><br>
+        <input type="text" id="uName" name="uName" size="50" autocomplete="off" required><br>
+
+        <p class="warning" id="nameWarning"></p>
+
+        <label for="uSpot">Ad spot wanted: (1-6)</label><br>
+        <input type="number" id="uSpot" name="uSpot" min="1" max="6" required><br>
+
+        <p class="warning" id="unavailableWarning"></p>
+
+        <label for="uDays">How many days do you want to rent the ad spot? (Max 30 days)</label><br>
+        <input type="number" id="uDays" name="uDays" min="1" max="30" required><br>
+
+        <div class="price">
+            <p class="equation" id="totalPrice">Your total cost will be: $ 0</p>
+            <p class="equation"> The price is calculated by amount of days to rent / the spot you want * 10 (rounded)</p>
+        </div>
+
+        <button onclick='getFormInput()' value="submit">Confirm</button>
+    </form> 
+
+    <script src="rentAds.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Voxel City - WebVR / A-Frame</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+</head>
+<body>
+
+  <!-- Added Line for back button-->
+  <a href="../index.html" class="back-button">← Back</a>
+
+  <a-scene>
+
+    <a-sky color="#87CEFA"></a-sky>
+
+    <a-entity 
+      ply-model="src:city_new.ply"
+      position="0 0 1"
+      rotation="270 0 0">
+    </a-entity>
+
+    <a-entity 
+      ply-model="src:city_new2.ply" 
+      position="25.569 0 -0.101"
+      rotation="270 180 0">
+    </a-entity>
+
+    <a-entity 
+      id="cameraRig" 
+      position="0 -0.25 0">
+      
+      <a-camera 
+        position="4.653 1.6 2.570"
+        wasd-controls="acceleration: 4" 
+        look-controls>
+      </a-camera>
+
+    </a-entity>
+
+    <a-entity 
+      ply-model="src:suv.ply"
+      position="-16 0.687 -0.647"
+      scale="0.8 0.8 0.8"
+      rotation="270 0 0"
+      animation="property: position; to: 50 0.687 -0.647; dir: normal; dur: 23000; loop: true; easing: linear">
+    </a-entity>
+
+    <a-entity 
+      ply-model="src:offroad.ply"
+      position="60 0.687 2.710"
+      scale="0.8 0.8 0.8"
+      rotation="270 90 0"
+      animation="property: position; to: -16 0.687 2.710; dir: normal; dur: 24000; loop: true; easing: linear">
+    </a-entity>
+
+    <a-entity 
+      ply-model="src:truck.ply"
+      position="-3.266 0.789 -5.168"
+      scale="0.8 0.8 0.8"
+      rotation="270 180 0">
+    </a-entity>
+
+  </a-scene>
+</body>
+</html>

@@ -1,0 +1,235 @@
+html, body {
+    /*background-color: #2D0922;*/
+    font-family: "Consolas";
+    font-size: 22.04px;
+    font-weight: 550;
+    text-align: left;
+    color: white;
+    background-color: var(--background);
+    background-image: var(--backgroundImage);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    
+  }
+
+:root {
+  --selected: #6995CC;
+  --active: #8ADB2E; 
+  --background: #2D0922; 
+  --transBackground: #2d0922bd; 
+  --backgroundImage: url('/page2/images/normalBackground.jpg');
+}
+
+.green {
+  color: var(--active);
+}
+
+.blue {
+  color: var(--selected);
+}
+
+.navBar {
+
+  border: 5px solid var(--background);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: sticky;
+  top: 20px;
+  font-size: 25px;
+    
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: var(--background); 
+  }
+  
+  li {      
+    float: left;
+    padding: 0 2px;
+  }
+        
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    background-color: rgba(105, 149, 204, 0);
+    transition: background-color 0.6s;
+    border-radius: 10px;
+  }
+    
+  li a:hover:not(.active) { /* comment out ":hover:not(.active)" to disable the fading and make it always on */
+    background-color: var(--selected);
+  }
+
+  .active {
+    background-color: var(--active);
+  }
+  
+}
+
+.grid-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: rgba(205, 50, 50, 0);
+}
+  
+.grid-container > div {
+  background-color: var(--transBackground);
+  text-align: center;
+  
+  border-radius: 10px;
+  color: white;
+}
+  
+.item1 {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+
+  p {
+    text-align: left;
+    padding: 0px 40px;
+  }
+
+  .noMargin {
+    text-align: left;
+    padding: 0px 40px;
+    margin-bottom: 0px;
+  }
+
+  ul {
+    margin: 0px;
+    text-align: left;
+    padding: 0px 60px;
+  }
+
+  .download {
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      border: 5px solid var(--background);
+      background-color: var(--background); 
+      border-radius: 10px;
+      padding: 20px 20px;
+      color: white;
+      transition: background-color 0.6s;
+    }
+
+    a:hover {
+      background-color: var(--selected);
+      
+    }
+  }
+}
+  
+.item2 {
+  grid-column: 2 / span 1;
+  grid-row: 1;
+
+  img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
+.item3 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  
+  p {
+    font-size: 16px;
+    font-weight: 545;
+    text-align: left;
+    padding: 0px 40px;
+    float: left;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 545;
+    text-align: left;
+    text-decoration: underline;
+    font-family: "Consolas";
+    font-size: 14.04px;
+    font-weight: 550;
+    color: white;
+  }
+
+  .button {
+
+    margin-right: 40px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+
+    button {
+      border: 5px solid var(--background);
+      background-color: var(--background); 
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 4px;
+      padding: 16px 16px;
+      position: auto;
+      float: right;
+      font-family: "Consolas";
+      font-size: 14.04px;
+      font-weight: 550;
+      text-align: center;
+      color: white;
+      transition: background-color 0.6s;
+    }
+
+    button:hover {
+      background-color: var(--selected);
+    }
+
+  }
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+/* Added lines for back button */
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: "Consolas";
+  font-size: 14px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}

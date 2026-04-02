@@ -1,0 +1,209 @@
+body, html {
+    font-family: "Consolas";
+    font-size: 23px;
+    font-weight: 550;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navBar {
+    margin-top: 0px;
+    position: sticky;
+    font-size: 25px;
+    width: 100%;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: grey; 
+    }
+  
+    li {      
+        float: left;
+        padding: 0 2px;
+    }
+        
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px 200px;
+        text-decoration: none;
+        transition: background-color 0.6s;
+        border-radius: 10px;
+    }
+
+    li a:hover:not(.active) { /* comment out ":hover:not(.active)" to disable the fading and make it always on */
+        background-color: darkgrey;
+    }
+
+    .active {
+        background-color: darkgrey;
+    }
+  
+}
+
+.grid-container {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: grey;
+    border: 10px solid grey;
+    border-radius: 20px;
+
+}
+  
+.grid-container > div {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    
+}
+  
+h1 {
+    text-align: center;
+}
+
+
+button {
+    font-family: "Consolas";
+    font-size: 23px;
+    font-weight: 550;
+    margin-left: 20px;
+    color: black;
+    text-align: center;
+    padding: 10px 115px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    background-color: grey;
+    transition: background-color 0.6s;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+form {
+    text-align: center;
+    margin-left: 20px;
+
+    button {
+        margin-left: 0px;
+    }
+}
+
+p {
+    margin-left: 20px;
+}
+
+.warning {
+    margin-left: 0px;
+}
+
+.price {
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+    p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+input {
+    font-family: "Consolas";
+    font-size: 23px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgrey;
+    width: 300px;
+}
+
+.widerInput {
+    input {
+        font-family: "Consolas";
+        font-size: 23px;
+        font-weight: 550;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: black;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        border: none;
+        background-color: lightgrey;
+        width: 1300px;
+    }
+}
+
+label {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Added lines for back button */
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: "Consolas";
+  font-size: 14px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
