@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wilix Games</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="firebaseGameSite/assets/logo.png">
+    <link rel="stylesheet" href="firebaseGameSite/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+    <script src="firebaseGameSite/firebase/setup.js"></script>
+	<script src="firebaseGameSite/firebase/io.js"></script>
+</head>
+<body onload="initialiseIndex()">
+    <h1 class="title">Wilix Games</h1>
+
+    <div class="gameBox">
+        <div class="game">
+            <h1>Vacuuming Simulator</h1>
+            <a href="firebaseGameSite/vacuumingSimulator/vacuumingSimulator.html">Play!</a>
+            <h3>Highscores:</h3>
+            <ol class="highscores">
+                <li id="vacuumingSimulator1"></li>
+                <li id="vacuumingSimulator2"></li>
+                <li id="vacuumingSimulator3"></li>
+                <li id="vacuumingSimulator4"></li>
+                <li id="vacuumingSimulator5"></li>
+            </ol>
+            <p>Please Note: Your Highscores are only Saved if you are Logged in</p>
+        </div>
+        <div class="game">
+            <h1>GeoDash</h1>
+            <a href="firebaseGameSite/geoDash/geoDash.html">Play!</a>
+            <h3>Highscores:</h3>
+            <ol class="highscores">
+                <li id="geoDash1"></li>
+                <li id="geoDash2"></li>
+                <li id="geoDash3"></li>
+                <li id="geoDash4"></li>
+                <li id="geoDash5"></li>
+            </ol>
+            <p>Please Note: Your Highscores are only Saved if you are Logged in</p>
+        </div>
+    </div>  
+
+
+
+    <div class="loginBox">
+        <div class="loginElements">
+            <img id="profileImage" src="firebaseGameSite/assets/unknownProfile.png">
+        </div>
+    
+        <div class="loginElements">
+            <p id="loginInformation">Not Logged In</p>
+            
+            <button id="loginButton" onclick="fb_login()">Login or Sign up</button>
+            <button id="logoutButton" onclick="fb_logout()">Logout</button>
+        </div>
+
+        
+    </div>
+
+    <div class="legalInfo">
+        <p>GeoDash game created by Mr Britain, lightly modified by me. Game used with permission.</p>
+    </div>
+    
+
+
+    <script src="firebaseGameSite/firebase/script.js"></script>
+</body>
+</html>

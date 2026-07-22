@@ -1,0 +1,19 @@
+Types of userInformation: (Small to large scope)
+1. localUserInformation                         - Used as input variables in various functions.
+2. firebaseUserInformation                      - Only used in fb_checkExistingData() as the input variable
+3. globalUserInformation                        - Only used in io.js, as it will be deleted on reload or navigation
+4. sessionUserInformation (Session Storage)     - Saved to session storage temporarily not deleted on reload or navigation
+
+how should i work the local sotrage for vacuuming simulator?
+
+
+
+Example function comment:
+
+/*****************************************************************************************************/
+// functionName() - async
+// Parameter 1: Description
+// Called by: functionName()
+// Calls: functionName()
+// Overall function description
+/*****************************************************************************************************/
