@@ -82,10 +82,10 @@ function fb_writeGoogleInformation(_firebaseUserInformation) {
 
     if (!_firebaseUserInformation.val()) {
         // No data exists for user so neither can form details, so redirect to details page
-        window.location.href = "firebaseGameSite/details.html";
+        window.location.href = "details.html";
     } else if (('formName' in _firebaseUserInformation.val()) == false || ('formAge' in _firebaseUserInformation.val()) == false) {
         // Either form age, form name or both don't exist, so redirect to details page
-        window.location.href = "firebaseGameSite/details.html";
+        window.location.href = "details.html";
     } else {
         // Both form age and form name exist, so log user in.
         displayLoginInformation(_firebaseUserInformation.val()['formName'], _firebaseUserInformation.val()['googleProfileURL']);
